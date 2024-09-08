@@ -2,8 +2,11 @@
 using namespace std;
  
 int main(){
-    long long X,A,B,C,D;
-    cin>>A>>B>>C>>D;
-    X=(A*B)-(C*D);
-    cout<<"Difference = "<< X;
+    long long x,y;
+    
+    cin>>x>>y;
+    cout<< x << " + " << y << " = " << x+y <<endl;
+    cout<< x << " * " << y << " = " << x*y <<endl;
+    cout<< x << " - " << y << " = " << x-y <<endl;
+ 
 }
