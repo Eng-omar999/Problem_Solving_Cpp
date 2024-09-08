@@ -2,11 +2,11 @@
 using namespace std;
  
 int main(){
-    long long x,y;
-    
-    cin>>x>>y;
-    cout<< x << " + " << y << " = " << x+y <<endl;
-    cout<< x << " * " << y << " = " << x*y <<endl;
-    cout<< x << " - " << y << " = " << x-y <<endl;
- 
+    int i;
+    long long l;
+    char ch;
+    float f;
+    double d;
+    cin>>i>>l>>ch>>f>>d;    
+    cout<<i<<endl<<l<<endl<<ch<<endl<<f<<endl<<d<<endl;
 }
