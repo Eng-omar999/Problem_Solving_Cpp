@@ -4,16 +4,22 @@
  
 using namespace std;
 int main ()
-{  
-    string f1_name,s1_name,f2_name,s2_name;
-    cin>>f1_name>>s1_name;
-    cin>>f2_name>>s2_name;
+{  long long A,B,C,max,min;
+     cin>>A>>B>>C;
  
-    if(s1_name==s2_name){
-        cout<<"ARE Brothers";
-    }else{
-        cout<<"NOT";
-    }
- 
- 
+if (A>=B && A>=C){
+     max = A;
+}else if(C>=A && C>=B){
+         max = C;
+}else if(B>=A && B>=C){
+        max = B;
+}
+if (A<=B && A<=C){
+     min = A;
+}else if(C<=A && C<=B){
+         min = C;
+}else if(B<=A && B<=C){
+        min = B;
+}
+cout<<min<<" "<<max;
 }    
