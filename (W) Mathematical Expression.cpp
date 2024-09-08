@@ -1,26 +1,25 @@
-#include <bits/stdc++.h>
-using namespace std;
 int main(){
  
-   int num1,num2,num3,num4;
-   cin>>num1>>num2>>num3>>num4;
-int start,end;
-if((num3 < num1 && num4 <num1) || (num3 > num2 && num4 > num2)){
-cout<<-1<<endl;
-} else {
-   if(num1>num3){
-   start=num1;
-   }else{
-   start=num3;
-  
-   
-   }if(num4<num2){
-    end=num4;
-    
-   }else {
-        end=num2;
-   }
-   cout<<start<<" "<<end;
-   
+   int num1,num2,res;
+   char s,eqal;
+   cin>>num1>>s>>num2>>eqal>>res;
+   int sum = num1+num2;
+   int min = num1-num2;
+   int mlt = num1*num2;
+ 
+   if(sum == res && s == '+')//=+
+   {
+    cout<<"Yes"<<endl;
+   }else if(sum != res && s == '+'){//!+
+        cout<<sum<<endl;
+   }else if(min == res && s == '-'){//=-
+        cout<<"Yes"<<endl;
+ 
+    }else if(min != res && s == '-'){//!-
+        cout<<min<<endl;
+   }else if(mlt == res && s == '*'){
+        cout<<"Yes"<<endl;
+    }else if(mlt != res && s == '*'){
+        cout<<mlt<<endl;
 }
 }
