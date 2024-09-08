@@ -1,20 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+
 int main(){
-int num1,years;
-int months,days;
-cin>>num1;
+double numf1,numf2;
+cin>>numf1>>numf2;
+//numf1=x 
  
-    years= num1/365;
-    num1 -= 365 * years;
-    months = num1 / 30;
-    num1 -= 30 * months;
-    days = num1;
+if (numf1>0 && numf2>0 ){
+    cout<<"Q1";
+}else if (numf1<0 && numf2>0){
+    cout<<"Q2";
+}else if (numf1<0 && numf2<0){
+    cout<<"Q3";
+}else if (numf1>0 && numf2<0){
+    cout<<"Q4";
+}else if(numf1==0 && numf2==0){
+cout<<"Origem";
+}else if(numf2==0){
+cout<<"Eixo X";
+}else if(numf1==0){
+cout<<"Eixo Y";
  
- 
-cout<<years<<" years"<<endl;
-cout<<months<<" months"<<endl;
-cout<<days<<" days"<<endl;
- 
+}
 }
