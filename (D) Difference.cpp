@@ -3,13 +3,9 @@
 #include<iomanip>
  
 using namespace std;
-int main ()
-{   
-   
-    double pi = 3.141592653;
-    double r;
-        cin >>r;
- 
-    cout << fixed << setprecision(9) << pi * r * r <<endl;
- 
+int main(){
+    long long X,A,B,C,D;
+    cin>>A>>B>>C>>D;
+    X=(A*B)-(C*D);
+    cout<<"Difference = "<< X;
 }
