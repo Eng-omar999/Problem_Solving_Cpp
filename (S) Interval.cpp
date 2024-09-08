@@ -1,49 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+
 int main(){
-int x,y,z;
-int fi,sec,th;
+double x;
+cin>>x;
+if(x>=0 && x<=25){
+    cout<<"Interval [0,25]"<<endl;
+}else if(x>25 && x<=50){
+cout<<"Interval (25,50]"<<endl;
  
-cin>>x>>y>>z;
-    if(x>=y && x>=z)
-    {
-        th=x;
-        if(y>=z)
-        {
-            sec=y;
-            fi=z;
-        }else if(z>=y)
-        {
-            sec=z;
-            fi=y;
-        }
-    }else if(y>=x && y>=z)
-    {
-       th=y;
-        if(x>=z)
-        {
-            sec=x;
-            fi=z;
-        }else if(z>=x)
-        {
-            sec=z;
-            fi=x;
-        } 
-    }else if(z>=x && z>=y)
-    {
-      th=z;
-        if(y>=x)
-        {
-            sec=y;
-            fi=x;
-        }else if(x>=y)
-        {
-            sec=x;
-            fi=y;
-        }
-    }
-cout<<fi<<"\n"<<sec<<"\n"<<th<<endl;
-cout<<endl;
-cout<<x<<"\n"<<y<<"\n"<<z<<endl;
+}else if(x>50 && x<=75){
+cout<<"Interval (50,75]"<<endl;
+ 
+}else if(x>75 && x<=100 ){
+cout<<"Interval (75,100]"<<endl;
+}else{
+    cout<<"Out of Intervals"<<endl;
+}
+ 
 }
