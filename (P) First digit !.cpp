@@ -2,24 +2,24 @@
 using namespace std;
  
 int main(){
-double numf1,numf2;
-cin>>numf1>>numf2;
-//numf1=x 
+int num;
+cin>>num;
+num = num/1000;
+if(num%2 ==0){
+    cout<<"EVEN"<<endl;
+}else{
+    cout<<"ODD"<<endl;
+}
+#include <bits/stdc++.h>
+using namespace std;
  
-if (numf1>0 && numf2>0 ){
-    cout<<"Q1";
-}else if (numf1<0 && numf2>0){
-    cout<<"Q2";
-}else if (numf1<0 && numf2<0){
-    cout<<"Q3";
-}else if (numf1>0 && numf2<0){
-    cout<<"Q4";
-}else if(numf1==0 && numf2==0){
-cout<<"Origem";
-}else if(numf2==0){
-cout<<"Eixo X";
-}else if(numf1==0){
-cout<<"Eixo Y";
- 
+int main(){
+int num;
+cin>>num;
+num = num/1000;
+if(num%2 ==0){
+    cout<<"EVEN"<<endl;
+}else{
+    cout<<"ODD"<<endl;
 }
 }
