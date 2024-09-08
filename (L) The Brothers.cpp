@@ -5,25 +5,15 @@
 using namespace std;
 int main ()
 {  
-    char x;
-    cin>>x;
+    string f1_name,s1_name,f2_name,s2_name;
+    cin>>f1_name>>s1_name;
+    cin>>f2_name>>s2_name;
  
-   if( x <= 57 &&  48<= x) // digits
-   {
-    cout<<"IS DIGIT"<<endl;
-   }
-   
-  else if( x <= 90 && 65 <= x) // CAP_alphabets
-   {
-    cout<<"ALPHA"<<endl;
-    cout<<"IS CAPITAL"<<endl;
+    if(s1_name==s2_name){
+        cout<<"ARE Brothers";
+    }else{
+        cout<<"NOT";
+    }
  
-   }
  
-   else if(x <= 122 && 97<= x) // small_alphabets
-   {
-    cout<<"ALPHA"<<endl;
-    cout<<"IS SMALL"<<endl;
- 
-   }
 }    
