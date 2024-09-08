@@ -5,11 +5,13 @@
 using namespace std;
 int main ()
 {   
-int A,B;
-cin>>A>>B;
-if(A>=B){
-    cout<< "Yes";
-}else{
-    cout<< "No";
-}
+ double x,y;
+ cin >> x >>y;
+ double originalNumber = x / y ; 
+ 
+ 
+cout << "floor " << x << " / " << y << " = " << floor(originalNumber)<<endl;
+cout << "ceil " << x << " / " << y << " = " << ceil(originalNumber)<<endl;
+cout << "round " << x << " / " << y << " = " << round(originalNumber)<<endl;
+ 
 }
