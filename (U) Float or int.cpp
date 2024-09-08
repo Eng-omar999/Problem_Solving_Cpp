@@ -2,17 +2,13 @@
 using namespace std;
 int main(){
  
-   int num1,num2;
-   char s;
-   cin>>num1>>s>>num2;
-   if(num1>num2 && s == '>')
-   {
-    cout<<"Right"<<endl;
-   }else if(num1<num2 && s == '<'){
-        cout<<"Right"<<endl;
-   }else if(num1==num2 && s == '='){
-        cout<<"Right"<<endl;
-   }else{
-        cout<<"Wrong"<<endl;
-   }
+    double num;
+    cin>>num;
+    int numInt = num;
+    double numFloat = num - numInt;
+    if(numFloat>0){
+        cout<<"float "<<numInt<<" "<<numFloat<<endl;
+    }else{
+        cout<<"int "<<numInt<<endl;
+    }
 }
