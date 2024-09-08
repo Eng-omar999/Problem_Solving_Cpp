@@ -8,18 +8,22 @@ int main ()
     char x;
     cin>>x;
  
-  if( x <= 90 && 65 <= x) // CAP_alphabets
+   if( x <= 57 &&  48<= x) // digits
    {
-    char After = x + 32;
-    cout<< After <<endl;
+    cout<<"IS DIGIT"<<endl;
+   }
+   
+  else if( x <= 90 && 65 <= x) // CAP_alphabets
+   {
+    cout<<"ALPHA"<<endl;
+    cout<<"IS CAPITAL"<<endl;
  
    }
  
    else if(x <= 122 && 97<= x) // small_alphabets
    {
-    char After = x - 32;
-    cout<< After <<endl;
- 
+    cout<<"ALPHA"<<endl;
+    cout<<"IS SMALL"<<endl;
  
    }
 }    
