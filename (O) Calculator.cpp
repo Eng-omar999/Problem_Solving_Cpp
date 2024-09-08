@@ -1,25 +1,47 @@
 #include <bits/stdc++.h>
 using namespace std;
+ int main(){
+string equ;
+cin>>equ;
+int indexOpr;
+char charOpr;
+string num1,num2;
+int num1Int,num2Int;
+    
+    for(int i=0; i<=equ.size()-1; i++)
+    {
+        if(equ[i] == '+' || equ[i] == '-' || equ[i] == '*' || equ[i] == '/')
+        {
+            indexOpr= i;
+            charOpr= equ[i];
+            break;
+        }
+    }    
+    num1 =  equ.substr(0,indexOpr);
+    num2 =  equ.substr(indexOpr+1);
  
-int main(){
-int num;
-cin>>num;
-num = num/1000;
-if(num%2 ==0){
-    cout<<"EVEN"<<endl;
-}else{
-    cout<<"ODD"<<endl;
-}
-#include <bits/stdc++.h>
-using namespace std;
+    stringstream s1;
+    s1<<num1;
+    s1>>num1Int;
  
-int main(){
-int num;
-cin>>num;
-num = num/1000;
-if(num%2 ==0){
-    cout<<"EVEN"<<endl;
-}else{
-    cout<<"ODD"<<endl;
+    stringstream s2;    
+    s2<<num2;
+    s2>>num2Int;
+ 
+    if(charOpr == '+')
+    {
+        cout<< num1Int+num2Int;
+    }   else if(charOpr == '-')
+    {
+        cout<< num1Int-num2Int;
+    }       else if(charOpr == '*')
+    {
+        cout<< num1Int*num2Int;
+    }           else if(charOpr == '/')
+    {
+        cout<< num1Int/num2Int;
+    }               else{
+     return 0;
 }
+ 
 }
